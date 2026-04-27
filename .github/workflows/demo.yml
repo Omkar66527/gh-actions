@@ -14,12 +14,8 @@ jobs:
       - name: Lint code
         run: npm run lint
       - name: Test code
-        run: npm run test
-
-#This is build Stage
- 
-
-  build:
+        run: npm run test 
+  build:                 #This is build Stage
     needs: test
     runs-on: ubuntu-latest
     steps:
